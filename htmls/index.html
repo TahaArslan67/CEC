@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width=, initial-scale=1.0">
+    <title>CEC - Giriş Ekranı</title>
+    <link rel="icon" href="../resimler/cecico.ico" type="image/x-icon" />
+
+    <style>
+        html {
+            background: url(../resimler/Blank-Desktop-Wallpaper.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="arkaplan" style="text-align: center;">
+
+
+<style>
+    .arkaplan{
+        background-size: 102%;   
+    }
+    .asd{
+        background-color: rgba(123, 194, 222, 0);
+        width: 400px;
+        height: 60%;
+        background-position: center;
+        margin: auto;
+        border-radius: 1%;
+        border: 5px inset silver;;
+        display: inline-block;
+        
+    }
+    .h3{
+        padding-left: 60px;
+        color: silver;
+        font-size: 100%;
+        margin-right: 61px;
+        margin-bottom: 15px;
+    }
+    .p1{
+        color: silver;
+        font-weight: 900;
+        font-size: 100%;
+        padding-right: 5px;
+    }
+    .a{
+       font-size: 140%;
+       font-weight: bold;
+       font-style: italic;
+       text-decoration: none;
+       border: solid 0px #1B9CFC;
+       padding-bottom: 5px;
+       padding-left: 2px;
+       padding-right: 2px;
+       position: relative;
+       cursor: pointer; 
+    }
+    input{
+        cursor: pointer;
+    }
+    .kayis{
+        padding: 10px;
+        margin-top: 150px;
+        
+    }
+    .alert {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #f44336;
+    color: white;
+    margin-left: 33.9%;
+    width: 490px;
+    border-radius: 10px;
+    word-spacing: 5px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 2rem #f44336;
+}
+.container2{
+    width: 360px;
+        height: 60%;
+        background-position: center;
+        margin: auto;
+        padding: 10px;
+        margin-top: 10px;
+        padding-top: 10px;
+padding-bottom: 10px;
+}
+.hidden{
+    display: none;
+}
+.closebtn {
+    margin-right: 12px;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 10px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: black;
+}
+    form{
+        box-shadow: 0 0 2.3px rgb(255, 255, 255, 0.4);
+        
+    }
+    form input[type="text"], form input[type="password"]{
+        border: solid 2px silver;
+        background: none;
+        
+    }
+    form input[type="button"]{
+        background: none;
+        border-color: silver;
+    }
+    form input{
+        transition: 0.2s ease-in;
+    }
+    form input[type="text"]:focus, form input[type="password"]:focus{
+        transition: 0.3s ease-in; 
+        border-color: #4aa1c6;
+        color:#4aa1c6;
+        background-color: #55e6c21a;
+        border: none;
+        outline: none;
+    }
+    form input[type="button"]:hover{
+        background-color: #0000003a;
+        color:#000000dd;
+    }
+
+    .kayis2{
+padding-top: 10px;
+padding-bottom: 10px;
+    }
+    @media screen and (min-width: 700px){
+        .a{
+            margin-left: 70px;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        html{
+            font-size: 75%;
+        }
+        .kayis{
+        padding: 0px;
+        margin-top: 150px;
+        padding-bottom: 12px;
+    }
+        .asd{
+        width: 300px;
+        height: 30%;
+        background-position: center;
+        margin: auto;
+        margin-top: 170px;
+        border-radius: 1%;
+        border: 5px inset white;
+        display: inline-block;
+    }
+    .h3{
+        text-align: center;
+        padding-left: 60px;
+        color: aliceblue;
+        font-size: 140%;
+        margin-right: 60px;
+        margin-top: 0px;
+        font-weight: 600;
+    }
+    .p1{
+        text-align: center;
+        margin-right: 60px;
+        padding-left: 60px;
+        color: aliceblue;
+        font-weight: 600;
+        font-size: 140%;
+    }
+    .container2{
+    width: 200px;
+        height: 60%;
+        font-size: 10px;
+        background-position: center;
+        margin: auto;
+        padding: 0px;
+        margin-top: 10px;
+        padding-top: 10px;
+padding-bottom: 10px;
+}
+.alert {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #f44336;
+    color: white;
+    left: 50%;
+    width: 313px;
+    border-radius: 10px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    box-shadow: 0 0 2rem #f44336;
+    font-size: 15px;
+}
+
+    }
+</style>
+    <div class="">
+        <form class="kayis2 col-sm-12 col-md-4 col-lg-4 asd kayis container" action="index.html" method="post">
+
+
+<h3 class="p1">
+    <i>Username:<input class="user" autocomplete="off" type="text" name="klncadi" id="klncadi"></i>
+</h3>
+
+<h3 class="h3">
+    <i>Password:<input type="password" name="password" id="password"></i>
+</h3>
+<p>admin,admin</p>
+<div class="a">
+    <input id="giris" type="button" onclick="fonksio()" value="Giriş Yap" name="giriş">
+</div>
+
+
+</form><br><br>
+<div class="alert container2 hidden">
+    <span class="closebtn" onclick="fonksio1()">×</span> 
+    <strong>Danger!</strong> Invalid username and/or password.
+  </div></div>
+
+  
+
+
+
+
+<script src="../js/index.js"></script>
+</body>
+</html>
